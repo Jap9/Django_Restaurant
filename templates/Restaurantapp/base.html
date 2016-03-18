@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+ <html>
+        <head>
+            <title>Restaurant</title>
+        </head>
+        <body>
+            <p>Hi there!</p>
+            <p>It works!</p>
+
+        {% for rest in rests %}
+         {{ rest }}
+
+            <div>
+                <p>published: {{ rest.name }}</p>
+                 <h1><a href="">{{ rest.web }}</a></h1>
+
+            </div>
+        </body>
+        {% endfor %}
+    </html>
