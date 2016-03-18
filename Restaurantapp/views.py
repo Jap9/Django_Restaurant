@@ -11,5 +11,5 @@ from django.http import HttpResponse
 #    return HttpResponse("hols")
 
 def mainpage(request):
-    rests = Restaurant.objects.filter(web="http://www.aaaa.com/")
+    rests = Restaurant.objects.filter(name__isnull=False)
     return render(request, 'Restaurantapp/base.html', {'rests':rests})

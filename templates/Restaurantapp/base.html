@@ -6,17 +6,26 @@
             <title>Restaurant</title>
         </head>
         <body>
-            <p>Hi there!</p>
-            <p>It works!</p>
+
+             <div>
+                <h1><p>Restaurants Lleida</p></h1>
+                 <br> </br>
+            </div>
 
         {% for rest in rests %}
-         {{ rest }}
+         <!--{{ rest }}-->
 
             <div>
-                <p>published: {{ rest.name }}</p>
-                 <h1><a href="">{{ rest.web }}</a></h1>
+            <br> </br>
+                <p>Nom: <b>{{ rest.name }}</b></p>
+                <p>Telefon: {{ rest.telephone }}</p>
+                <p>Direccio: {{ rest.street }}</p>
+                <p>Ciutat: {{ rest.city }}</p>
+                <p><a href="Lloc web">{{ rest.web }}</a><p>
 
             </div>
-        </body>
+
         {% endfor %}
+        </body>
+
     </html>
