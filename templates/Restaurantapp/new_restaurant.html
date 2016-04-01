@@ -1,4 +1,9 @@
-
+{% load staticfiles %}
+<html>
+        <head>
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+            <title></title>
+        </head>
 
     {% block content %}
         <h1>New post</h1>
@@ -7,3 +12,4 @@
             <button type="submit" class="save btn btn-default">Save</button>
         </form>
     {% endblock %}
+</html>

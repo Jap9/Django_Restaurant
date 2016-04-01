@@ -6,4 +6,4 @@ class PostForm(forms.ModelForm):
 
         class Meta:
             model = Restaurant
-            fields = ('name',)
+            fields = ('name','telephone','street',)
