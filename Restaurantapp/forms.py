@@ -6,4 +6,11 @@ class PostForm(forms.ModelForm):
 
         class Meta:
             model = Restaurant
-            fields = ('name','telephone','street',)
+            fields = ('name','price','telephone','street','city','zipCode','web','free',)
+
+class PostForm_reserva(forms.ModelForm):
+
+        class Meta:
+            model = Restaurant
+            fields = ('free',)
+

@@ -12,7 +12,8 @@
         </style>
 
     {% block content %}
-        <p class = "serif"> Dades del nou restaurant</p>
+        <p class = "serif"> Per a quants vols reservar taula?</p>
+
         <form method="POST" class="post-form">{% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="save btn btn-default">Save</button>
