@@ -1,3 +1,16 @@
 .marge{
     margin: 20px;
+
+
     }
+#header{
+    background-position-x: initial;
+    background-repeat: no-repeat;
+    background-image: url("../bg-header.jpg");
+    height: 110px;
+
+}
+#corners{
+    border-radius:30px;
+    border: 2px solid #428bc8
+}

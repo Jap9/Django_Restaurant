@@ -11,23 +11,25 @@
             <title>Restaurant</title>
         </head>
         <body>
-             <div>
+             <div id="header">
                 <h1><p>Benvinguts a Restaurants Lleida App</p></h1>
-                 <br> </br>
+                <br> </b>
+             </div>
 
-                 <h4>Llista actual de Restaurants (ordenats per preu)</h4>
-                  <br> </br>
+             <h4>Llista actual de Restaurants (ordenats per preu)</h4>
+             <br> </br>
 
-            </div>
 
-    <a class="marge" href="{% url 'Restaurantapp.views.new_restaurant' %}"  class="top-menu">Afegir un nou restaurant <span class="glyphicon glyphicon-plus"></span></a>
-    <a class="marge" href="http://127.0.0.1:8000/admin" class="top-menu">Ves al panell d'Administracio </a>
+
+    <a class="marge" id="corners" href="{% url 'Restaurantapp.views.new_restaurant' %}"  class="top-menu">Afegir un nou restaurant <span class="glyphicon glyphicon-plus"></span></a>
+    <a class="marge" id="corners" href="http://127.0.0.1:8000/admin" class="top-menu">Ves al panell d'Administracio </a>
 
      <br> </br>
+      <hr>
         {% for rest in rests %}
          <!--{{ rest }}-->
 
-            <div>
+            <div >
                 <p class="marge">Nom: <b>{{ rest.name }}</b></p>
                 <p class="marge">Preu: {{ rest.price }} €</p>
                 <p class="marge">Telefon: {{ rest.telephone }}</p>
@@ -58,6 +60,7 @@
 
 
             <br> </br><br> </br>
+            <hr>
             </div>
 
         {% endfor %}
