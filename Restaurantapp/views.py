@@ -37,9 +37,7 @@ def reservar_restaurant(request):
     if request.method == "POST":
         form = PostForm_reserva(request.POST)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.published_date = timezone.now()
-            post.save()
+
             return redirect('http://127.0.0.1:8000/')
     else:
         form = PostForm_reserva()
